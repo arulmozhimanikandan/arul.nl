@@ -1,0 +1,23 @@
+{
+  "header": {
+    "name": "Arulmozhimaniaknda",
+    "designation": "FrontEnd Developer",
+    "contactInfo": {
+      "email": "arulgetsolute@gmail.com",
+      "phone": "+31613728903"
+    }
+  },
+  "skills": [{
+    "type":"Framework",
+    "items": ["React","Angular","Cordova","RNative","jest","Cypress"]
+  },
+    {
+      "type":"Languages",
+      "items": ["Html","SCSS","JS","PHP","SQL"]
+    },
+    {
+      "type":"Tools",
+      "items": ["Photoshop","Illustrator"]
+    }]
+
+}

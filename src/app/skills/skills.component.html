@@ -1,4 +1,8 @@
-<div>
-<app-skill></app-skill>
+<div class="skill-container">
+  <h2>{{skills.type}}</h2>
+  <div class="skill-list">
+    <app-skill *ngFor="let skill of skills.items" [title]="skill"></app-skill>
+  </div>
+
 </div>
 <app-border></app-border>

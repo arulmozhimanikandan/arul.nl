@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
 
-
+  @Input() title: string;
   constructor() { }
 
   ngOnInit() {

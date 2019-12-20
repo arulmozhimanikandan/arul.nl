@@ -1,6 +1,6 @@
-<app-header></app-header>
+<app-header [headerInfo]="profile.header"></app-header>
 <div class="container">
   <h1>Skills & tools</h1>
-  <app-skills></app-skills>
+  <app-skills *ngFor="let skill of profile.skills" [skills]="skill"></app-skills>
 </div>
 

@@ -1,0 +1,22 @@
+.skill-container {
+  width: 150px;
+  height: 40px;
+  background: #34495e;
+  display: flex;
+  border-radius: 20px;
+}
+.icon-container {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: #34495e;
+  border-radius:20px ;
+  border:2px solid #2ecc71;
+}
+.title {
+  color: #fff;
+  font-size: 22px;
+  font-family: laviregular;
+  padding: 4px;
+  margin-left: 10px;
+}

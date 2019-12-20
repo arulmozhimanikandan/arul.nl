@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'qwipstikregular';
+  src: url('./assets/fonts/qokijo-webfont.woff2') format('woff2'),
+  url('./assets/fonts/qokijo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'laviregular';
+  src: url('./assets/fonts/lavi-webfont.woff2') format('woff2'),
+  url('./assets/fonts/lavi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+body{
+  padding: 0;
+  margin: 0;
+  background: #2ecc71;
+}
+
+ h3, h2, h1 {
+  margin: 0 0 10px;
+  font-family: laviregular;
+}
+
+.container {
+  padding: 30px;
+  min-width: 980px;
+  max-width: 1280px;
+  height: auto;
+  margin: auto;
+}
+

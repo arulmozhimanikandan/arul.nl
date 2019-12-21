@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BorderComponent } from './border/border.component';
 import { SkillComponent } from './skill/skill.component';
+import { TileComponent } from './tile/tile.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SkillComponent } from './skill/skill.component';
     HeaderComponent,
     SkillsComponent,
     BorderComponent,
-    SkillComponent
+    SkillComponent,
+    TileComponent
   ],
   imports: [
     BrowserModule

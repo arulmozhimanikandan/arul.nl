@@ -9,13 +9,16 @@ import * as profile from './data/data.json'
 export class AppComponent implements OnInit{
   title = 'arulNL';
   profile: {
-    skills: any;
+    experience: [];
+    skills:[];
     header: {};
   };
 
   constructor() {
   }
   ngOnInit(): void {
+    // @ts-ignore
     this.profile = profile.default
+    console.log(this.profile.experience)
   }
 }

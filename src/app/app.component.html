@@ -1,6 +1,14 @@
 <app-header [headerInfo]="profile.header"></app-header>
 <div class="container">
   <h1>Skills & tools</h1>
+  <div class="max-content-container">
   <app-skills *ngFor="let skill of profile.skills" [skills]="skill"></app-skills>
+  </div>
+</div>
+<div class="container">
+  <h1>Experience</h1>
+  <div class="max-content-container">
+  <app-tile *ngFor="let project of profile.experience" [tile]="project"></app-tile>
+  </div>
 </div>
 

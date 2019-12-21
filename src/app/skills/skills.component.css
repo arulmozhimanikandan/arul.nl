@@ -1,5 +1,6 @@
 .skill-container {
-
+padding: 15px;
+  border-bottom: thin solid #2eb55b;
 }
 .skill-list{
   display: flex;

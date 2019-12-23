@@ -3,20 +3,20 @@
     <span class="header-title">{{experience.name}}</span>
   </div>
   <div class="content-container">
-    <div class="left-arrow">
+    <div class="left-arrow" (click)="previousProject()">
       <span class="arrow"></span>
     </div>
     <div class="description-container">
       <div class="content">
-        <h2>{{experience.projects[0].name}}</h2>
-        <p class="description">{{experience.projects[0].Description}}</p>
+        <h2>{{selectedProject.name}}</h2>
+        <p class="description">{{selectedProject.Description}}</p>
       <div class="stack"></div>
       </div>
       <div class="counter">
         <app-pagination [projects]="experience.projects"></app-pagination>
       </div>
     </div>
-    <div class="right-arrow">
+    <div class="right-arrow" (click)="nextProject()">
       <span class="arrow"></span>
     </div>
   </div>

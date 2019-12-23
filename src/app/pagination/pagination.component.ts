@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PaginationComponent implements OnInit {
 
+  @Input() pageNumber: number;
   @Input() projects: [];
   constructor() { }
 

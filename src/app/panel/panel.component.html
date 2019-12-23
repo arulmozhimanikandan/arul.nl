@@ -3,8 +3,8 @@
     <span class="header-title">{{experience.name}}</span>
   </div>
   <div class="content-container">
-    <div class="left-arrow" (click)="previousProject()">
-      <span class="arrow"></span>
+    <div class="left-arrow" (click)="previousProject()" >
+      <span class="arrow" *ngIf="experience.projects.length > 1"></span>
     </div>
     <div class="description-container">
       <div class="content">
@@ -13,11 +13,11 @@
       <div class="stack"></div>
       </div>
       <div class="counter">
-        <app-pagination [projects]="experience.projects"></app-pagination>
+        <app-pagination [projects]="experience.projects" *ngIf="experience.projects.length > 1" [pageNumber]="selectedProjectIndex"></app-pagination>
       </div>
     </div>
     <div class="right-arrow" (click)="nextProject()">
-      <span class="arrow"></span>
+      <span class="arrow" *ngIf="experience.projects.length > 1"></span>
     </div>
   </div>
 </div>

@@ -26,6 +26,7 @@ export class PanelComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes) {
     this.selectedProject = this.experience.projects[0];
+    this.selectedProjectIndex = 0;
 
   }
 

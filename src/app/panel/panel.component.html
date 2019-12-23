@@ -1,0 +1,23 @@
+<div class="panel-container">
+  <div class="header">
+    <span class="header-title">{{experience.name}}</span>
+  </div>
+  <div class="content-container">
+    <div class="left-arrow">
+      <span class="arrow"></span>
+    </div>
+    <div class="description-container">
+      <div class="content">
+        <h2>{{experience.projects[0].name}}</h2>
+        <p class="description">{{experience.projects[0].Description}}</p>
+      <div class="stack"></div>
+      </div>
+      <div class="counter">
+        <app-pagination [projects]="experience.projects"></app-pagination>
+      </div>
+    </div>
+    <div class="right-arrow">
+      <span class="arrow"></span>
+    </div>
+  </div>
+</div>

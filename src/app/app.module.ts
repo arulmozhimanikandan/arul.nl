@@ -7,6 +7,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { BorderComponent } from './border/border.component';
 import { SkillComponent } from './skill/skill.component';
 import { TileComponent } from './tile/tile.component';
+import { PanelComponent } from './panel/panel.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { TileComponent } from './tile/tile.component';
     SkillsComponent,
     BorderComponent,
     SkillComponent,
-    TileComponent
+    TileComponent,
+    PanelComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule

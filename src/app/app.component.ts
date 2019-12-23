@@ -8,9 +8,10 @@ import * as profile from './data/data.json'
 })
 export class AppComponent implements OnInit{
   title = 'arulNL';
+  selectedEmployer: {} = profile.experience[0];
   profile: {
     experience: [];
-    skills:[];
+    skills: [];
     header: {};
   };
 
@@ -18,7 +19,11 @@ export class AppComponent implements OnInit{
   }
   ngOnInit(): void {
     // @ts-ignore
-    this.profile = profile.default
-    console.log(this.profile.experience)
+    this.profile = profile.default;
   }
+
+  selectEmployer(data) {
+    this.selectedEmployer = data;
+  }
+
 }

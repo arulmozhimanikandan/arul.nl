@@ -1,0 +1,18 @@
+.pagination-container{
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  width: 10px;
+  height:10px;
+  border-radius: 5px;
+  background: #34495E;
+  margin: 0 10px;
+}
+
+.selectedDots {
+  width: 20px;
+  height:20px;
+  border-radius: 10px;
+  background: #34495E;
+}

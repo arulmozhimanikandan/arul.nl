@@ -2,13 +2,18 @@
 <div class="container">
   <h1>Skills & tools</h1>
   <div class="max-content-container">
-  <app-skills *ngFor="let skill of profile.skills" [skills]="skill"></app-skills>
+    <app-skills *ngFor="let skill of profile.skills" [skills]="skill"></app-skills>
   </div>
 </div>
 <div class="container">
   <h1>Experience</h1>
   <div class="max-content-container">
-  <app-tile *ngFor="let project of profile.experience" [tile]="project"></app-tile>
+    <div class="flex-container">
+      <div>
+        <app-tile *ngFor="let project of profile.experience" [tile]="project" (click)="selectEmployer(project)"></app-tile>
+      </div>
+      <app-panel [experience]="selectedEmployer"></app-panel>
+    </div>
   </div>
 </div>
 

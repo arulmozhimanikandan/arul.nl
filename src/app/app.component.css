@@ -2,3 +2,6 @@
   max-width: 980px;
   margin: auto;
 }
+.flex-container{
+  display: flex;
+}

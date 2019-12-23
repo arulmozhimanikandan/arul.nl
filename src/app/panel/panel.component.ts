@@ -1,11 +1,11 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, OnChanges} from '@angular/core';
 
 @Component({
   selector: 'app-panel',
   templateUrl: './panel.component.html',
   styleUrls: ['./panel.component.css']
 })
-export class PanelComponent implements OnInit {
+export class PanelComponent implements OnInit, OnChanges {
 
   @Input() experience: {
     projects: any[];
@@ -21,8 +21,12 @@ export class PanelComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.experience);
     this.selectedProject = this.experience.projects[0];
+  }
+
+  ngOnChanges(changes) {
+    this.selectedProject = this.experience.projects[0];
+
   }
 
   nextProject() {

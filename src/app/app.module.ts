@@ -9,7 +9,7 @@ import { SkillComponent } from './skill/skill.component';
 import { TileComponent } from './tile/tile.component';
 import { PanelComponent } from './panel/panel.component';
 import { PaginationComponent } from './pagination/pagination.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { PaginationComponent } from './pagination/pagination.component';
     PaginationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

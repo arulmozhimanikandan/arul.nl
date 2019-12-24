@@ -7,13 +7,13 @@
       <span class="arrow" *ngIf="experience.projects.length > 1"></span>
     </div>
     <div class="description-container">
-      <div class="content">
+      <div class="content" [@flipState]="swiped">
         <h2>{{selectedProject.name}}</h2>
         <p class="description">{{selectedProject.Description}}</p>
       <div class="stack"></div>
       </div>
       <div class="counter">
-        <app-pagination [projects]="experience.projects" *ngIf="experience.projects.length > 1" [pageNumber]="selectedProjectIndex"></app-pagination>
+        <app-pagination [projects]="experience.projects" *ngIf="experience.projects.length > 1" [pageNumber]="selectedProjectIndex" ></app-pagination>
       </div>
     </div>
     <div class="right-arrow" (click)="nextProject()">

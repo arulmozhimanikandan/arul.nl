@@ -28,9 +28,16 @@ body{
 
 .container {
   padding: 30px;
-  min-width: 980px;
-  max-width: 1280px;
+  max-width: 980px;
   height: auto;
   margin: auto;
+}
+
+@media only screen
+and (min-device-width: 720px)
+and (max-device-width: 1024px) {
+  .container{
+    padding: 10px;
+  }
 }
 

@@ -4,4 +4,6 @@ padding: 15px;
 }
 .skill-list{
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }

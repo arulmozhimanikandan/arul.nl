@@ -26,3 +26,27 @@ font-family: qwipstikregular;
 .id_container {
   display: flex;
 }
+
+@media only screen
+and (max-device-width: 450px) {
+  .id_container{
+    display: flex;
+  }
+  .profile_pic{
+    width: 100px;
+    height: 100px;
+    background: url(assests/profile_pic.png);
+    background-size: cover;
+    align-self: center;
+  }
+  .profile_info h3, .profile_info h2, .profile_info h1 {
+    font-size: 18px;
+    font-family: laviregular;
+  }
+  .header{
+    height: 250px;
+  }
+  .container{
+    padding: 10px;
+  }
+}

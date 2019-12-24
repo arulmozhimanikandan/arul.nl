@@ -11,7 +11,7 @@
   <div class="max-content-container">
     <div class="flex-container">
       <div class="mobile-flex-container">
-        <app-tile *ngFor="let project of profile.experience" [tile]="project" (click)="selectEmployer(project)"></app-tile>
+        <app-tile *ngFor="let project of profile.experience" [tile]="project" (click)="selectEmployer(project)" [selected]="selectedEmployer.name === project.name" ></app-tile>
       </div>
       <app-panel [experience]="selectedEmployer"></app-panel>
     </div>

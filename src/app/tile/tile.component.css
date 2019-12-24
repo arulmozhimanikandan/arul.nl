@@ -12,3 +12,9 @@
   padding-top: 5PX;
   cursor: pointer;
 }
+
+.selectedTile {
+  background: #3a768f;
+  border-radius: 20px;
+  border: 2px solid #34495e;
+}

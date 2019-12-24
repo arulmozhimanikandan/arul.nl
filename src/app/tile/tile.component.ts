@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class TileComponent implements OnInit {
 
+  @Input() selected: boolean;
   @Input() tile : {
     initial: string;
   }

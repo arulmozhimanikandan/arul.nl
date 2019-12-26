@@ -5,7 +5,10 @@
 .flex-container{
   display: flex;
 }
-
+.about{
+  font-family: laviregular;
+  font-size: 20px;
+}
 @media only screen
 and (max-device-width: 450px) {
   .mobile-flex-container{

@@ -2,6 +2,8 @@
 <div class="container">
 
   <div class="max-content-container">
+    <h1>About me</h1>
+    <p class="about">{{this.aboutMe}}</p>
     <h1>Skills & tools</h1>
     <app-skills *ngFor="let skill of profile.skills" [skills]="skill"></app-skills>
   </div>

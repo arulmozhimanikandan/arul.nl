@@ -1,25 +1,33 @@
 import { Component, OnInit } from '@angular/core';
-// @ts-ignore
-import * as profile from './data/data.json'
+import {profile} from './data/profile_data';
+import * as moment from 'moment'
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'arulNL';
+  title = `It's me Arul`;
+  aboutMe: string;
   selectedEmployer: {} = profile.experience[0];
   profile: {
-    experience: [];
-    skills: [];
-    header: {};
+    skills: any;
+    header: {
+      about: any;
+    };
   };
 
   constructor() {
   }
   ngOnInit(): void {
-    // @ts-ignore
-    this.profile = profile.default;
+    this.profile = profile;
+    const startDate = (moment('04/01/2012'));
+    const today = moment().startOf('day');
+    const dateMomentObject = moment.duration(today.diff(startDate));
+    const fullDate = `${dateMomentObject.years()} years ${dateMomentObject.months()} months  ${dateMomentObject.days()} days`;
+    this.aboutMe = profile.header.about.replace('#experience', fullDate);
+
   }
 
   selectEmployer(data) {

@@ -1,7 +1,9 @@
-{
+export const profile = {
   "header": {
     "name": "Arulmozhimanikandan",
     "designation": "FrontEnd Developer",
+    "about":"I Am a Frontend Developer Engineer with #experience of experience in developing small to large-scale web applications and mobile application for Banking, Telecom, Healthcare and Educational clients. I have also has developed over 15 websites based on React, Redux, Angular, Cordova, Java- Script, HTML, CSS, PHP, MSQ and Neo4J. Next to my development skills, I have also skilled and experience in Testing (Jest, cypress).\n" +
+      "I have a Bachelor degree in Electronics and Communication Engineering, I am open and communicative person who is working in the Netherlands for 3+ years now. Besides my working experience as a Development Engineer, am also challenging myself with a variety of Hackathons, studying new technologies and frameworks.",
     "contactInfo": {
       "email": "arulgetsolute@gmail.com",
       "phone": "+31613728903"
@@ -34,9 +36,9 @@
         "stack": ["HTML5","css3", "Jquery","Cordova"]
       },
       {
-      "name": "RSGT",
-      "Description": "I have designed and helped in developing a cross platform logistics bases mobile application which runs on Android, iOS and Blackberry.",
-      "stack": ["HTML5","css3", "Jquery","Cordova"]
+        "name": "RSGT",
+        "Description": "I have designed and helped in developing a cross platform logistics bases mobile application which runs on Android, iOS and Blackberry.",
+        "stack": ["HTML5","css3", "Jquery","Cordova"]
       },
       {
         "name": "BioQuest",
@@ -96,4 +98,4 @@
     ]
   }]
 
-}
+};

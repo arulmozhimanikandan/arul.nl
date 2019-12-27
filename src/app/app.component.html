@@ -3,9 +3,9 @@
 
   <div class="max-content-container">
     <h1>About me</h1>
-    <p class="about">{{this.aboutMe}}</p>
-    <h1>Skills & tools</h1>
-    <app-skills *ngFor="let skill of profile.skills" [skills]="skill"></app-skills>
+    <span class="about" [innerHTML]="aboutMe"></span>
+<!--    <h1>Skills & tools</h1>-->
+<!--    <app-skills *ngFor="let skill of profile.skills" [skills]="skill"></app-skills>-->
   </div>
 </div>
 <div class="container">
@@ -19,5 +19,20 @@
     </div>
   </div>
 </div>
+
+<div class="container">
+  <h2>Hobby Project</h2>
+  <div style="display: flex">
+    <ng-container  *ngFor="let project of profile['Hobby_Projects']">
+    <app-post [post]="project" *ngIf="project.type === 'post'"></app-post>
+    </ng-container>
+  </div>
+  <div style="display: flex">
+    <ng-container  *ngFor="let project of profile['Hobby_Projects']">
+      <app-post [post]="project" *ngIf="project.type !== 'post'" style="margin-right: 15px"></app-post>
+    </ng-container>
+  </div>
+  </div>
+
 
 

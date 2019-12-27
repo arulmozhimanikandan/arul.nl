@@ -1,0 +1,10 @@
+<div class="post-container">
+  <h1>{{post.name}}</h1>
+  <div *ngIf="post.embedVideo" style="margin-bottom: 10px">
+  <video [src]="post.embedVideo" style="width: 100%" controls></video>
+  </div>
+  <span>
+    <code>Source Code:<br> <a [href]="post.sourceUrl">{{post.sourceUrl }}</a> </code> <br>
+       <code>Demo Link:<br> <a [href]="post.liveLink">{{post.liveLink }}</a> </code>
+  </span>
+</div>

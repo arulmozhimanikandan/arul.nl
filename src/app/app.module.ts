@@ -10,6 +10,8 @@ import { TileComponent } from './tile/tile.component';
 import { PanelComponent } from './panel/panel.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HighlightComponent } from './highlight/highlight.component';
+import { PostComponent } from './post/post.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SkillComponent,
     TileComponent,
     PanelComponent,
-    PaginationComponent
+    PaginationComponent,
+    HighlightComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

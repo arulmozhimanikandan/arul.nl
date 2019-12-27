@@ -27,7 +27,9 @@ export class AppComponent implements OnInit{
     const dateMomentObject = moment.duration(today.diff(startDate));
     const fullDate = `${dateMomentObject.years()} years ${dateMomentObject.months()} months  ${dateMomentObject.days()} days`;
     this.aboutMe = profile.header.about.replace('#experience', fullDate);
-
+    const regex = /(?:^|\W)#(\w+)(?!\w)/g;
+    this.aboutMe = this.aboutMe.split(' ').map(word => word.replace(regex,`<span class="highlight">${word.split('#')[1]}</span>`)).join(' ');
+    console.log(this.aboutMe)
   }
 
   selectEmployer(data) {

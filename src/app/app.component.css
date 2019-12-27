@@ -8,6 +8,13 @@
 .about{
   font-family: laviregular;
   font-size: 20px;
+  line-height: 35px;
+}
+::ng-deep .highlight {
+  background: #34495E;
+  color: #2eb55b;
+  padding: 3px 5px;
+  border-radius: 5px;
 }
 @media only screen
 and (max-device-width: 450px) {

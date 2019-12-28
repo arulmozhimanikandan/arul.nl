@@ -27,10 +27,13 @@
     <app-post [post]="project" *ngIf="project.type === 'post'"></app-post>
     </ng-container>
   </div>
-  <div class="flex-container">
+  <div class="container" style="padding: 30px 0 30px 0">
+  <div class="flex-container" style="flex-direction: column">
+    <h2>Node packages</h2>
     <ng-container  *ngFor="let project of profile['Hobby_Projects']">
       <app-post [post]="project" *ngIf="project.type !== 'post'" style="margin-right: 15px"></app-post>
     </ng-container>
+  </div>
   </div>
   </div>
 

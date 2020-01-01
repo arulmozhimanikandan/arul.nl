@@ -23,6 +23,12 @@ font-family: qwipstikregular;
   font-family: laviregular;
 }
 
+.profile_info h3 a {
+  margin: 0 0 10px;
+  font-family: laviregular;
+  color: #000;
+}
+
 .id_container {
   display: flex;
 }
